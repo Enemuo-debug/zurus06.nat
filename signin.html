@@ -90,7 +90,7 @@
 
     goToVerify.onclick = (e) => {
       e.preventDefault();
-      window.location = "/browser/signup.html"
+      window.location = "/signup.html"
     };
 
     // Email Verification
@@ -159,7 +159,7 @@
                 const data = await response.json();
                 alert(data.message);
 
-                window.location = "/browser/dashboard.html";
+                window.location = "/dashboard.html";
               } catch (err) {
                 alert('Login failed: ' + err.message);
                 signinForm.querySelector('button').disabled = false;
@@ -169,3 +169,4 @@
   </script>
   </body>
 </html>
+
